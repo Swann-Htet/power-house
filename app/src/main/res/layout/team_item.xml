@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/card"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/team1ImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/football_default">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/team2ImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/football_default">
+    </ImageView>
+
+    <TextView
+        android:layout_below="@id/team1ImageView"
+        android:id="@+id/team1NameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team 1"
+        android:letterSpacing="0.03"
+        android:fontFamily="@font/bebas"
+        android:textSize="18sp"
+        android:layout_marginStart="5dp"
+        android:textColor="#FF0000" />
+
+    <Button
+        android:layout_below="@+id/progressBar"
+        android:id="@+id/voteTeam1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:text="Vote"
+        android:fontFamily="@font/sfpro"
+        android:letterSpacing="0.2"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/custom_button"
+        android:textSize="16sp" />
+
+    <!-- TextView to display the vote count for Team 1 -->
+    <TextView
+        android:id="@+id/team1VoteCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/team1NameTextView"
+        android:layout_height="wrap_content"
+        android:text="Vote: 0"
+        android:fontFamily="@font/sfpro"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/secondary_color" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:lottie_url="REPLACE_JSON_URL"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/animation2"
+        android:layout_centerHorizontal="true"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:layout_below="@id/team2ImageView"
+        android:id="@+id/team2NameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team 2"
+        android:fontFamily="@font/bebas"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        android:letterSpacing="0.03"
+        android:textColor="#FF0000" />
+
+    <ProgressBar
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        style="@style/CustomProgressBar"
+        android:id="@+id/progressBar"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_progress_bar"
+        android:layout_below="@+id/team2VoteCountTextView"
+        android:layout_marginTop="5dp"
+        android:progress="0" />
+
+    <Button
+        android:id="@+id/voteTeam2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="VOTE"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/sfpro"
+        android:letterSpacing="0.2"
+        android:textStyle="bold"
+        android:background="@drawable/custom_button"
+        android:layout_below="@+id/progressBar"
+        android:layout_alignParentEnd="true"
+        android:textSize="16sp" />
+
+    <!-- TextView to display the vote count for Team 2 -->
+    <TextView
+        android:id="@+id/team2VoteCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vote: 0"
+        android:fontFamily="@font/sfpro"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/team2NameTextView"
+        android:textColor="@color/secondary_color"/>
+
+    <!-- Add any other views you want to display for each team -->
+
+</RelativeLayout>

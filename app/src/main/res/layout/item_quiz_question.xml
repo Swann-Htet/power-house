@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layout_marginBottom="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/imagePanalQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/quizPhotoImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:background="@drawable/quiz_photo_shape"
+                android:padding="2dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="Quiz Photo" />
+
+        </RelativeLayout>
+
+        <!-- Quiz Question -->
+        <TextView
+            android:layout_below="@+id/imagePanalQuiz"
+            android:id="@+id/quizQuestionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/sfpro"
+            android:textColor="@color/secondary_color"
+            android:text="Quiz Question Here"
+            android:textSize="18sp" />
+
+        <!-- Option Buttons -->
+        <Button
+            android:id="@+id/optionButton1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/bebas"
+            android:textSize="20sp"
+            android:letterSpacing="0.03"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_button"
+            android:layout_below="@id/quizQuestionTextView"
+            android:layout_marginTop="10dp"
+            android:text="Option 1"/>
+
+        <Button
+            android:id="@+id/optionButton2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/bebas"
+            android:textSize="20sp"
+            android:letterSpacing="0.03"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_button"
+            android:layout_below="@id/optionButton1"
+            android:layout_marginTop="10dp"
+            android:text="Option 2"/>
+
+        <Button
+            android:id="@+id/optionButton3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/bebas"
+            android:textSize="20sp"
+            android:letterSpacing="0.03"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_button"
+            android:layout_below="@id/optionButton2"
+            android:layout_marginTop="10dp"
+            android:text="Option 3"/>
+
+        <Button
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz"
+            android:id="@+id/quizIDText">
+        </Button>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Power House</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="about_us">Discover the world of football like never before with [Your App Name]! Watch exhilarating highlights, vote for your favorite teams, and test your football knowledge with interactive quizzes. Plus, earn points for every interaction and unlock exciting rewards.</string>
+</resources>

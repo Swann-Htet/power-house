@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_color"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="normal"
+                android:textSize="12.5dp"
+                android:text="1. ">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_color"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="normal"
+                android:textSize="12.5dp"
+                android:text="At Power House, we prioritize your privacy. Please take a moment to review our Privacy Policy, which outlines how we handle, protect, and use your personal information.">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_color"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="normal"
+                android:textSize="12.5dp"
+                android:text="2. ">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_color"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="normal"
+                android:textSize="12.5dp"
+                android:text="Safeguarding your privacy is a top priority for us at Power House. We encourage you to familiarize yourself with our Privacy Policy to understand how we handle your data.">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_color"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="normal"
+                android:textSize="12.5dp"
+                android:text="3. ">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_color"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="normal"
+                android:textSize="12.5dp"
+                android:text="Your trust is important to us. Our Privacy Policy details how we collect, use, and protect your personal information. We recommend reviewing this document for a clear understanding of our practices.">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_color"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="normal"
+                android:textSize="12.5dp"
+                android:text="4. ">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_color"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="normal"
+                android:textSize="12.5dp"
+                android:text="We value your privacy and want you to feel confident using Power House. Please review our Privacy Policy to learn more about how we handle your personal information.">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_color"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="normal"
+                android:textSize="12.5dp"
+                android:text="5. ">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_color"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="normal"
+                android:textSize="12.5dp"
+                android:text="At Power House, we are committed to protecting your privacy. Our Privacy Policy provides comprehensive information on how we manage your data. Take a moment to review it for your peace of mind.">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_color"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="normal"
+                android:textSize="12.5dp"
+                android:text="6. ">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_color"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="normal"
+                android:textSize="12.5dp"
+                android:text="Your privacy matters. We encourage you to read our Privacy Policy to gain insights into how we handle your personal information at Power House.">
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textAlignment="textEnd"
+            android:textColor="#FF0000"
+            android:paddingEnd="5dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/sfpro"
+            android:letterSpacing="0.03"
+            android:text="Power House Admin Team">
+        </TextView>
+
+    </LinearLayout>
+
+</ScrollView>

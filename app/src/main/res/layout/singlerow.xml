@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/userPhoto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:src="@color/secondary_color"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            app:strokeWidth="1.5dp">
+        </com.google.android.material.imageview.ShapeableImageView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/userPhoto"
+            android:layout_marginStart="5dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/channelName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginStart="5dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/sfpro"
+                    android:text="Loading Channel Name..."
+                    android:textColor="@color/secondary_color">
+                </TextView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/channelName">
+
+                    <TextView
+                        android:id="@+id/currentDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginStart="5dp"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/sfpro"
+                        android:text="30-08-2023"
+                        android:textColor="@color/secondary_color">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/currentTime"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_marginStart="5dp"
+                        android:textSize="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:fontFamily="@font/sfpro"
+                        android:text="13:15"
+                        android:textColor="@color/secondary_color">
+                    </TextView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/uploadedVideos"
+            android:layout_below="@+id/userPhoto"
+            android:layout_width="match_parent"
+            app:resize_mode="fit"
+            app:use_controller="true"
+            android:background="@color/black"
+            app:show_timeout="5000"
+            app:controller_layout_id="@layout/custom_controller"
+            android:layout_height="200dp">
+        </com.google.android.exoplayer2.ui.PlayerView>
+
+        <TextView
+            android:id="@+id/videoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading Title..."
+            android:fontFamily="@font/sfpro"
+            android:textSize="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/uploadedVideos"
+            android:layout_marginTop="5dp"
+            android:textFontWeight="800"
+            android:textColor="@color/secondary_color">
+        </TextView>
+
+        <TextView
+            android:id="@+id/videoDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/secondary_color"
+            android:text="Loading Description..."
+            android:layout_marginTop="3dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/sfpro"
+            android:layout_below="@+id/videoTitle">
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/videoDescription"
+            android:background="#4D242424">
+        </View>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

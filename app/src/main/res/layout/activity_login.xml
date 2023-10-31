@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/logoBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/logoph">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/bannerHeaderTitle"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/bebas"
+                    android:letterSpacing="0.1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="40sp"
+                    android:textColor="@color/primary_color"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/logoBanner"
+                    android:text="POWER HOUSE">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/bannerTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bannerHeaderTitle"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/secondary_color"
+                    android:fontFamily="@font/sfpro"
+                    android:textAlignment="center"
+                    android:text="Login">
+                </TextView>
+
+                <EditText
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/ic_dark_email"
+                    android:drawablePadding="10dp"
+                    android:layout_width="match_parent"
+                    android:paddingEnd="15dp"
+                    android:fontFamily="@font/sfpro"
+                    android:layout_height="50dp"
+                    android:id="@+id/editTextEmailLog"
+                    android:textColor="@color/secondary_color"
+                    android:inputType="textEmailAddress"
+                    android:textSize="16sp"
+                    android:background="@drawable/custom_input_account"
+                    android:paddingLeft="20dp"
+                    android:hint="Enter Your Email Address"
+                    android:layout_below="@+id/bannerTitle">
+                </EditText>
+
+                <EditText
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/ic_dark_key"
+                    android:paddingEnd="15dp"
+                    android:fontFamily="@font/sfpro"
+                    android:drawablePadding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/editTextPasswordLog"
+                    android:textColor="@color/secondary_color"
+                    android:inputType="textVisiblePassword"
+                    android:textSize="16sp"
+                    android:background="@drawable/custom_input_account"
+                    android:paddingLeft="20dp"
+                    android:hint="Enter Your Password"
+                    android:layout_below="@+id/editTextEmailLog">
+                </EditText>
+
+                <ImageView
+                    android:layout_below="@+id/editTextEmailLog"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/showhidePassword"
+                    android:layout_width="30dp"
+                    android:padding="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:scaleType="centerCrop"
+                    android:layout_height="50dp">
+                </ImageView>
+
+                <LinearLayout
+                    android:id="@+id/forgotPw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/editTextPasswordLog"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/forgotPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Forgot Password?"
+                        android:layout_marginEnd="3dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textAlignment="textEnd">
+                    </TextView>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/buttonLog"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Login"
+                    android:letterSpacing="0.2"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/bebas"
+                    android:layout_below="@+id/forgotPw"
+                    android:background="@drawable/custom_button">
+                </Button>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="25dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@id/buttonLog">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sfpro"
+                        android:textColor="@color/secondary_color"
+                        android:text="Don't have an account? ">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textRegister"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/sfpro"
+                        android:textColor="@color/primary_color"
+                        android:textFontWeight="600"
+                        android:letterSpacing="0.05"
+                        android:layout_height="wrap_content"
+                        android:text="Register Here">
+                    </TextView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarLog"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:elevation="10dp"
+        android:visibility="gone"
+        android:indeterminate="true"
+        style="?android:attr/progressBarStyleLarge"
+        android:indeterminateDrawable="@drawable/prograssbar"
+        android:backgroundTint="@color/primary_color">
+    </ProgressBar>
+
+</RelativeLayout>

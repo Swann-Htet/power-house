@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".VideoViewActivity">
+
+    <RelativeLayout
+        android:id="@+id/bannerPanal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/primary_color">
+
+        <TextView
+            android:id="@+id/backTomain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:drawablePadding="3dp"
+            android:letterSpacing="0.03"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bebas"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:drawableLeft="@drawable/ic_back">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_hl"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
+            android:fontFamily="@font/bebas"
+            android:letterSpacing="0.03"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:text="Highlights">
+        </TextView>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/bannerPanal"
+        android:id="@+id/recyclerViewVideoView"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/adViewVideo"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="FULL_BANNER"
+        ads:adUnitId="ca-app-pub-4743806105497141/5017638987">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E3E3E3"
+    android:padding="15dp"
+    tools:context=".NotiFragment">
+
+    <LinearLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:fontFamily="@font/bebas"
+            android:id="@+id/votingButton"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/custom_button"
+            android:letterSpacing="0.03"
+            android:text="Voting" />
+
+        <Button
+            android:id="@+id/quizButton"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:background="@drawable/custom_button"
+            android:layout_weight="1"
+            android:fontFamily="@font/bebas"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:letterSpacing="0.03"
+            android:text="Quiz" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:layout_below="@+id/tabLayout"
+        android:id="@+id/recyclerViewVote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/recyclerViewNoti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabLayout"
+        android:layout_marginTop="0dp"></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

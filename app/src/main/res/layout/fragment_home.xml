@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".HomeFragment">
+
+    <ImageView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_info"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp">
+    </ImageView>
+
+    <ImageView
+        android:layout_above="@+id/animationViewHome"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/powerhouselogo">
+    </ImageView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationViewHome"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/animation8"
+        app:lottie_url="REPLACE_JSON_URL" />
+
+    <LinearLayout
+        android:id="@+id/greetingPanal"
+        android:layout_below="@id/animationViewHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textWelcome"
+            android:fontFamily="@font/bebas"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_color"
+            android:text="GOOD MORNING ">
+        </TextView>
+
+        <TextView
+            android:id="@+id/userNameHome"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/bebas"
+            android:textSize="25dp"
+            android:textColor="@color/primary_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@+id/greetingPanal"
+        android:id="@+id/videoViewUp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bebas"
+        android:textSize="25dp"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Highlights">
+    </Button>
+
+    <TextView
+        android:id="@+id/textNoVD"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:text="Kindly be informed that there is currently no video available. We appreciate your patience and anticipate the release of forthcoming videos."
+        android:layout_below="@+id/animationViewHome"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/sfpro"
+        android:textColor="@color/secondary_color"
+        android:letterSpacing="0.01"
+        android:layout_height="wrap_content">
+    </TextView>
+
+</RelativeLayout>

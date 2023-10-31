@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/custom_input_account.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#d3d3d3" /> <!-- Set the desired background color -->
+    <corners android:radius="8dp" /> <!-- Set corner radius if needed -->
+    <!-- You can add other attributes here like strokes, gradients, etc. -->
+</shape>

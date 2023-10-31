@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "594609143502",
+    "project_id": "powerhouse-app-ph",
+    "storage_bucket": "powerhouse-app-ph.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594609143502:android:5b2e570d902d70d1fe1a9f",
+        "android_client_info": {
+          "package_name": "com.powerhouse.zeroone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594609143502-64jsk63b5269nhdcutmur5kh3s2s1b13.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.powerhouse.zeroone",
+            "certificate_hash": "ac6241fae9f4ddeebc3f723abb1913ed4efb50a4"
+          }
+        },
+        {
+          "client_id": "594609143502-v1mng8qh0fd8630cakp78r4id0per6lg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBifZEwJAwgWFBtYOMqP37Vak9MHwlLYXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594609143502-v1mng8qh0fd8630cakp78r4id0per6lg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594609143502:android:ed92bda6541c5387fe1a9f",
+        "android_client_info": {
+          "package_name": "com.zeroone.powerhouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594609143502-v1mng8qh0fd8630cakp78r4id0per6lg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBifZEwJAwgWFBtYOMqP37Vak9MHwlLYXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594609143502-v1mng8qh0fd8630cakp78r4id0per6lg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

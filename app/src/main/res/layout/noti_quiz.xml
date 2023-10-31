@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:padding="16dp"
+    android:background="@drawable/card"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/logoBanner"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/logophspinner">
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@id/logoBanner"
+        android:layout_height="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Power House"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/bebas"
+            android:textSize="20sp"
+            android:letterSpacing="0.03"
+            android:textColor="@color/primary_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUIZ"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/bebas"
+            android:textSize="20sp"
+            android:letterSpacing="0.03"
+            android:textColor="@color/primary_color" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/namePanal"
+        android:layout_below="@+id/logoBanner"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello "
+            android:fontFamily="@font/sfpro"
+            android:textSize="16sp"
+            android:textColor="@color/secondary_color"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/userNameQWinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Power House"
+            android:fontFamily="@font/sfpro"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/secondary_color" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@+id/namePanal"
+        android:id="@+id/messageQWinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textSize="15sp"
+        android:textColor="@color/secondary_color"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_below="@+id/namePanal"
+        android:id="@+id/quizmatchID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MatchID"
+        android:visibility="invisible"
+        android:textSize="15sp"
+        android:textColor="@color/secondary_color"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <!-- ImageView to indicate if the message is read (e.g., a dot or other icon) -->
+    <ImageView
+        android:id="@+id/imageViewReadIndicator"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_red_dot"
+        android:visibility="visible"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp" />
+
+</RelativeLayout>

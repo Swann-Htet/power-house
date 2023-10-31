@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppOpen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/bebas"
+                android:textSize="35sp"
+                android:textColor="@color/secondary_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WELCOME TO ">
+            </TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logoph"
+            android:layout_gravity="center">
+        </ImageView>
+
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/bebas"
+            android:textSize="35sp"
+            android:textColor="@color/primary_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POWER HOUSE">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/sfpro"
+            android:textSize="12sp"
+            android:textColor="@color/secondary_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.05"
+            android:text="Powered by ">
+        </TextView>
+
+        <TextView
+            android:fontFamily="@font/sfpro"
+            android:textSize="12sp"
+            android:textColor="@color/primary_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.05"
+            android:textStyle="bold"
+            android:text="Swan Htet">
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

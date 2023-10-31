@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfile">
+
+    <Button
+        android:id="@+id/backBtnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_button"
+        android:drawableLeft="@drawable/ic_back"
+        android:fontFamily="@font/bebas"
+        android:letterSpacing="0.05"
+        android:padding="5dp"
+        android:layout_margin="25dp"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="20sp"></Button>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewUpdateProfileHead"
+                android:layout_marginTop="15dp"
+                android:text="Update your profile details"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textColor="@color/primary_color"
+                android:fontFamily="@font/bebas">
+            </TextView>
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/ic_dark_account"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingEnd="15dp"
+                android:id="@+id/editTextFullNameUpdate"
+                android:fontFamily="@font/sfpro"
+                android:textColor="@color/secondary_color"
+                android:inputType="textPersonName"
+                android:textSize="16sp"
+                android:background="@drawable/custom_input_account"
+                android:paddingLeft="20dp"
+                android:hint="Enter Your Name"
+                android:layout_below="@+id/textViewUpdateProfileHead">
+            </EditText>
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/ic_dark_calendar"
+                android:paddingEnd="15dp"
+                android:fontFamily="@font/sfpro"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editTextDobUpdate"
+                android:textColor="@color/secondary_color"
+                android:inputType="date"
+                android:textSize="16sp"
+                android:background="@drawable/custom_input_account"
+                android:paddingLeft="20dp"
+                android:focusable="false"
+                android:hint="Select Your Birthday"
+                android:layout_below="@+id/editTextFullNameUpdate">
+            </EditText>
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/ic_dark_phone"
+                android:paddingEnd="15dp"
+                android:fontFamily="@font/sfpro"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editTextMobileUpdate"
+                android:textColor="@color/secondary_color"
+                android:inputType="phone"
+                android:textSize="16sp"
+                android:background="@drawable/custom_input_account"
+                android:paddingLeft="20dp"
+                android:hint="Enter Your Phone Number"
+                android:layout_below="@+id/editTextDobUpdate">
+            </EditText>
+
+            <RadioGroup
+                android:id="@+id/radioGroupGenUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/editTextMobileUpdate">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioFemale"
+                    android:fontFamily="@font/sfpro"
+                    android:text="Female"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondary_color">
+                </RadioButton>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioMale"
+                    android:text="Male"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/sfpro"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondary_color">
+                </RadioButton>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroupGenUpdate"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/buttonUpdate"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Update Profile Details"
+                    android:textSize="16sp"
+                    android:paddingLeft="20dp"
+                    android:paddingEnd="20dp"
+                    android:drawableLeft="@drawable/ic_editpen"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/sfpro"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/custom_button">
+                </Button>
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBarUpdate"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:elevation="10dp"
+                android:visibility="gone"
+                android:indeterminate="true"
+                style="?android:attr/progressBarStyleLarge"
+                android:indeterminateDrawable="@drawable/prograssbar"
+                android:backgroundTint="@color/primary_color">
+            </ProgressBar>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewPoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="FULL_BANNER"
+        ads:adUnitId="ca-app-pub-4743806105497141/6803301863">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

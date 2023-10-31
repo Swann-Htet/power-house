@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppInfo">
+
+    <RelativeLayout
+        android:id="@+id/bannerPanal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/primary_color">
+
+        <TextView
+            android:id="@+id/backTomain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:drawablePadding="3dp"
+            android:letterSpacing="0.03"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bebas"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:drawableLeft="@drawable/ic_back">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_baseline_info_24"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
+            android:fontFamily="@font/bebas"
+            android:letterSpacing="0.03"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:text="Info">
+        </TextView>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/bannerPanal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:layout_height="match_parent">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:lottie_url="REPLACE_JSON_URL"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/animation11"
+                android:layout_centerHorizontal="true"
+                app:lottie_loop="true"/>
+
+            <TextView
+                android:layout_below="@+id/animationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Developer"
+                android:id="@+id/devInfo"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="bold"
+                android:letterSpacing="0.03"
+                android:textColor="@color/primary_color"
+                android:textSize="20dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_below="@+id/devInfo"
+                android:id="@+id/devInfoC"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:textSize="12.5dp"
+                        android:layout_marginStart="1dp"
+                        android:text="Name: ">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00061E"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:textSize="12.5dp"
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:text="Swan Htet">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:textSize="12.5dp"
+                        android:layout_marginStart="1dp"
+                        android:text="Contact: ">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/emailDev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FF5722"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:textSize="12.5dp"
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:text="shynx.11.wz@gmail.com">
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/devInfoC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About App Development"
+                android:id="@+id/abDev"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="bold"
+                android:letterSpacing="0.03"
+                android:textColor="@color/primary_color"
+                android:textSize="20dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/abDev"
+                android:id="@+id/devContent"
+                android:textColor="@color/secondary_color"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="normal"
+                android:textSize="12.5dp"
+                android:text="As a seasoned app developer, I bring a wealth of experience in crafting user-friendly and innovative mobile applications. From conceptualization to deployment, I'm dedicated to creating seamless and engaging experiences for users. With a keen eye for detail and a passion for cutting-edge technology, I'm committed to delivering apps that exceed expectations.">
+            </TextView>
+
+
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:id="@+id/animationViewAb"
+                android:layout_below="@+id/devContent"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationViewAbout"
+                    android:layout_marginTop="20sp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:lottie_url="REPLACE_JSON_URL"
+                    app:lottie_autoPlay="true"
+                    app:lottie_rawRes="@raw/animation12"
+                    android:layout_centerHorizontal="true"
+                    app:lottie_loop="true"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:src="@drawable/logoph"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="57dp"
+                    android:layout_marginLeft="48dp">
+                </ImageView>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_below="@+id/animationViewAb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Introduction"
+                android:id="@+id/intro"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="bold"
+                android:letterSpacing="0.03"
+                android:textColor="@color/primary_color"
+                android:textSize="20dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/introPara"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="1dp"
+                android:layout_below="@+id/intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Power House, where football passion meets cutting-edge technology. Our app is your go-to hub for all things football, offering highlights, news, interactive games, and the ability to vote for your favorite teams just like the pros. This guide will walk you through every exciting feature, ensuring you make the most of your football experience. Let's get started!"
+                android:textColor="@color/secondary_color"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="normal"
+                android:textSize="12.5dp">
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/introPara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Main Features"
+                android:id="@+id/features"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="bold"
+                android:letterSpacing="0.03"
+                android:textColor="@color/primary_color"
+                android:textSize="20dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/features"
+                android:id="@+id/featuresC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00061E"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:text="Highlights: "
+                        android:textAlignment="textEnd"
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:text="Watch the best moments from recent matches, filtered by league, team, or player."
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:textAlignment="textEnd"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00061E"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:text="News: "
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:text="Stay updated with the latest football news, including transfers and analyses."
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00061E"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:text="Voting: "
+                        android:textAlignment="textEnd"
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:text="Have your say by participating in team polls for an interactive experience."
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00061E"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:text="Games: "
+                        android:textAlignment="textEnd"
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:text="Test your football knowledge with interactive game."
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00061E"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:text="Earn Points: "
+                        android:textAlignment="textEnd"
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:text="Engage with the app to accumulate points for exclusive perks and rewards."
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/featuresC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Troubleshooting"
+                android:id="@+id/troubleshoot"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="bold"
+                android:letterSpacing="0.03"
+                android:textColor="@color/primary_color"
+                android:textSize="20dp">
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/troubleshootC"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/troubleshoot"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:fontFamily="@font/sfpro"
+                    android:textStyle="bold"
+                    android:textColor="#FF0000"
+                    android:letterSpacing="0.03"
+                    android:text="Video Playback Error">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00061E"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:text="• Issue: "
+                        android:textAlignment="textStart"
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:text="Unable to play videos."
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00061E"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:text="• Solution: "
+                        android:textAlignment="textStart"
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:text="Check your internet connection. If the problem persists, try restarting the app or clearing the cache."
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:fontFamily="@font/sfpro"
+                    android:textStyle="bold"
+                    android:textColor="#FF0000"
+                    android:letterSpacing="0.03"
+                    android:text="Login Failure">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00061E"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:text="• Issue: "
+                        android:textAlignment="textStart"
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:text="Unable to log in or access your account."
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00061E"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:text="• Solution: "
+                        android:textAlignment="textStart"
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:text="Ensure you're using the correct login credentials. If you've forgotten your password, use the Forgot Password option to reset it."
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:fontFamily="@font/sfpro"
+                    android:textStyle="bold"
+                    android:textColor="#FF0000"
+                    android:letterSpacing="0.03"
+                    android:text="App Crashes">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00061E"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:text="• Issue: "
+                        android:textAlignment="textStart"
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:text="The app unexpectedly closes or crashes."
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00061E"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:text="• Solution: "
+                        android:textAlignment="textStart"
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:text="Update the app to the latest version. If the issue persists, try restarting your device."
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:fontFamily="@font/sfpro"
+                    android:textStyle="bold"
+                    android:textColor="#FF0000"
+                    android:letterSpacing="0.03"
+                    android:text="Slow Loading Times">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00061E"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:text="• Issue: "
+                        android:textAlignment="textStart"
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:text="The app or content takes a long time to load."
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00061E"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:text="• Solution: "
+                        android:textAlignment="textStart"
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:text="Check your internet connection. If it's stable, close other background apps to free up resources."
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:fontFamily="@font/sfpro"
+                    android:textStyle="bold"
+                    android:textColor="#FF0000"
+                    android:letterSpacing="0.03"
+                    android:text="Profile Picture Upload Error">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00061E"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:text="• Issue: "
+                        android:textAlignment="textStart"
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:text="Unable to upload or change your profile picture."
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00061E"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:text="• Solution: "
+                        android:textAlignment="textStart"
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:text="Ensure the image meets the required file type and size specifications. Try uploading a different image."
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:fontFamily="@font/sfpro"
+                    android:textStyle="bold"
+                    android:textColor="#FF0000"
+                    android:letterSpacing="0.03"
+                    android:text="Point Redemption Error">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00061E"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:text="• Issue: "
+                        android:textAlignment="textStart"
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:text="Unable to redeem points for rewards."
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00061E"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="bold"
+                        android:text="• Solution: "
+                        android:textAlignment="textStart"
+                        android:letterSpacing="0.03"
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:fontFamily="@font/sfpro"
+                        android:textStyle="normal"
+                        android:text="In certain regions or times, there might be limited availability of ads. This can affect the points earned during ad loading. Please try again later."
+                        android:layout_marginStart="1dp"
+                        android:textSize="12.5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/troubleshootC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terms of Service"
+                android:id="@+id/tostitle"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="bold"
+                android:letterSpacing="0.03"
+                android:textColor="@color/primary_color"
+                android:textSize="20dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:id="@+id/tosC"
+                android:layout_below="@+id/tostitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/secondary_color"
+                    android:fontFamily="@font/sfpro"
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="1dp"
+                    android:textSize="12.5dp"
+                    android:text="Please read and understand our Terms of Service before using Power House. By using the app, you agree to abide by the terms and conditions outlined in this document.">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/termsofservice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF0000"
+                    android:fontFamily="@font/sfpro"
+                    android:textAlignment="textEnd"
+                    android:paddingEnd="5dp"
+                    android:layout_marginStart="1dp"
+                    android:textSize="12.5dp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.03"
+                    android:text="Terms of Service">
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tosC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:id="@+id/pandp"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="bold"
+                android:letterSpacing="0.03"
+                android:textColor="@color/primary_color"
+                android:textSize="20dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:id="@+id/pandpC"
+                android:layout_below="@+id/pandp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/secondary_color"
+                    android:fontFamily="@font/sfpro"
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="1dp"
+                    android:textSize="12.5dp"
+                    android:text="Your privacy is important to us. Please review our Privacy Policy to understand how we collect, use, and safeguard your personal information.">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/privacypolicy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF0000"
+                    android:fontFamily="@font/sfpro"
+                    android:textAlignment="textEnd"
+                    android:paddingEnd="5dp"
+                    android:layout_marginStart="1dp"
+                    android:textSize="12.5dp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.03"
+                    android:text="Privacy Policy">
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/pandpC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About the App"
+                android:id="@+id/aboutAppT"
+                android:fontFamily="@font/sfpro"
+                android:textStyle="bold"
+                android:letterSpacing="0.03"
+                android:textColor="@color/primary_color"
+                android:textSize="20dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/appVersion"
+                android:layout_below="@+id/aboutAppT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_color"
+                android:fontFamily="@font/sfpro"
+                android:text=""
+                android:textStyle="bold"
+                android:letterSpacing="0.03"
+                android:layout_marginTop="5dp"
+                android:textAlignment="textStart"
+                android:layout_marginStart="1dp"
+                android:textSize="15dp">
+            </TextView>
+
+            <TextView
+                android:layout_below="@+id/appVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_color"
+                android:fontFamily="@font/sfpro"
+                android:textAlignment="textStart"
+                android:layout_marginStart="1dp"
+                android:textSize="12.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/about_us">
+            </TextView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

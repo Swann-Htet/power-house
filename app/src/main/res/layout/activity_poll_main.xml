@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E3E3"
+    tools:context=".PollMainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationViewpoll"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:lottie_url="REPLACE_JSON_URL"
+        app:lottie_autoPlay="true"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/animation6"
+        android:layout_centerInParent="true"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:id="@+id/notavaText"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/secondary_color"
+        android:letterSpacing="0.02"
+        android:layout_below="@+id/animationViewpoll"
+        android:fontFamily="@font/sfpro"
+        android:text="Voting for football matches is not currently available. It will be implemented soon.">
+    </TextView>
+
+    <RelativeLayout
+        android:background="@color/primary_color"
+        android:layout_width="match_parent"
+        android:id="@+id/banner"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/backTomain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:drawablePadding="3dp"
+            android:letterSpacing="0.03"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bebas"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:drawableLeft="@drawable/ic_back">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_vote"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
+            android:fontFamily="@font/bebas"
+            android:letterSpacing="0.03"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:text="Vote">
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/banner"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_above="@+id/adViewPoll"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewTeamVote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewPoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="FULL_BANNER"
+        ads:adUnitId="ca-app-pub-4743806105497141/6474190884">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

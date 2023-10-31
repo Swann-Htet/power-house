@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfilePic">
+
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/custom_button"
+        android:drawableLeft="@drawable/ic_back"
+        android:fontFamily="@font/bebas"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:letterSpacing="0.05"
+        android:padding="5dp"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="20sp"></Button>
+
+    <RelativeLayout
+        android:layout_below="@id/backBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:layout_above="@+id/adViewChangePic"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewUpdatePicHead"
+                android:text="Upload your profile picture"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:textColor="@color/primary_color"
+                android:fontFamily="@font/bebas">
+            </TextView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/uploadPicChooseBtn"
+                android:layout_below="@+id/textViewUpdatePicHead"
+                android:layout_marginTop="20dp"
+                android:text="Choose Picture"
+                android:fontFamily="@font/bebas"
+                android:textSize="23sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:letterSpacing="0.09"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/white">
+            </Button>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_centerHorizontal="true"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/imageView_Profile_dp"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                app:strokeColor="@color/secondary_color"
+                app:strokeWidth="1.5dp"
+                android:layout_below="@id/uploadPicChooseBtn">
+            </com.google.android.material.imageview.ShapeableImageView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/upload_pic_button"
+                android:layout_below="@id/imageView_Profile_dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:background="@drawable/custom_button"
+                android:text="Upload"
+                android:textColor="@color/white"
+                android:fontFamily="@font/bebas"
+                android:letterSpacing="0.09"
+                android:textSize="23sp">
+            </Button>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBarUpt"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:elevation="10dp"
+                android:visibility="gone"
+                android:indeterminate="true"
+                style="?android:attr/progressBarStyleLarge"
+                android:indeterminateDrawable="@drawable/prograssbar"
+                android:backgroundTint="@color/primary_color">
+            </ProgressBar>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewChangePic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="FULL_BANNER"
+        ads:adUnitId="ca-app-pub-4743806105497141/2583735695">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

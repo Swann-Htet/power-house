@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F3F3F3"
+    android:layout_height="match_parent"
+    tools:context=".MissionMainActivity">
+
+    <RelativeLayout
+        android:background="@color/primary_color"
+        android:layout_width="match_parent"
+        android:id="@+id/banner"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/backTomain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:drawablePadding="3dp"
+            android:letterSpacing="0.03"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bebas"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:drawableLeft="@drawable/ic_back">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_mission_icon"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
+            android:fontFamily="@font/bebas"
+            android:letterSpacing="0.03"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:text="Mission">
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/banner"
+        android:id="@+id/missionPanal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/card"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rewardPanal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressBarReward"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="22dp"
+                android:progressDrawable="@drawable/custom_progress_bar" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/unavaliableGift"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/unavailablegift"
+                android:visibility="visible"></pl.droidsonroids.gif.GifImageView>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/animation4"
+                app:lottie_url="REPLACE_JSON_URL" />
+
+            <TextView
+                android:id="@+id/textViewTotalPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/progressBarReward"
+                android:layout_marginStart="35dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/bebas"
+                android:text="Points: 0"
+                android:textColor="@color/primary_color"
+                android:textSize="20dp"></TextView>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnRewardAD"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/rewardPanal"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_button"
+            android:fontFamily="@font/bebas"
+            android:letterSpacing="0.03"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="Earn Point"
+            android:textColor="@color/white"
+            android:textSize="18dp"></Button>
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewMission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/missionPanal"
+        android:layout_centerHorizontal="true"
+        ads:adSize="FULL_BANNER"
+        ads:adUnitId="ca-app-pub-4743806105497141/1948337101">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/adViewMission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textBannerQuiz"
+        android:text="Answer quiz to get reward"
+        android:textAlignment="center"
+        android:fontFamily="@font/bebas"
+        android:textSize="25sp"
+        android:textColor="@color/primary_color"
+        android:letterSpacing="0.05">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_above="@+id/adViewMission02"
+        android:layout_below="@id/textBannerQuiz"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:id="@+id/quizRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F3F3F3"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView2"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/animaton5"
+            app:lottie_url="REPLACE_JSON_URL" />
+
+        <TextView
+            android:id="@+id/textNoAvalible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/animationView2"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:fontFamily="@font/sfpro"
+            android:letterSpacing="0.02"
+            android:text="There is currently no quiz available\nplease await the incoming quiz"
+            android:textAlignment="center"
+            android:textColor="@color/primary_color"
+            android:textSize="18sp"></TextView>
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_marginTop="5dp"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewMission02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="FULL_BANNER"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="ca-app-pub-4743806105497141/1474953569">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
