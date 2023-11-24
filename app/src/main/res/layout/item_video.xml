@@ -156,7 +156,7 @@
             android:backgroundTint="@color/primary_color"
             android:elevation="10dp"
             android:indeterminate="true"
-            android:indeterminateDrawable="@drawable/prograssbar"
+            android:indeterminateDrawable="@drawable/logophw"
             android:visibility="visible" />
 
     </RelativeLayout>

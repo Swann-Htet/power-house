@@ -33,7 +33,7 @@
                 android:fontFamily="@font/sfpro"
                 android:textStyle="normal"
                 android:textSize="12.5dp"
-                android:text="By accessing and using Power House, you agree to be bound by our Terms of Service. Please take a moment to review these terms carefully before proceeding.">
+                android:text="By accessing and using Million Sports, you agree to be bound by our Terms of Service. Please take a moment to review these terms carefully before proceeding.">
             </TextView>
 
         </LinearLayout>
@@ -63,7 +63,7 @@
                 android:fontFamily="@font/sfpro"
                 android:textStyle="normal"
                 android:textSize="12.5dp"
-                android:text="Welcome to Power House! Before you dive in, we recommend familiarizing yourself with our Terms of Service. Your continued use of the app signifies your acceptance of these terms and conditions.">
+                android:text="Welcome to Million Sports! Before you dive in, we recommend familiarizing yourself with our Terms of Service. Your continued use of the app signifies your acceptance of these terms and conditions.">
             </TextView>
 
         </LinearLayout>
@@ -93,7 +93,7 @@
                 android:fontFamily="@font/sfpro"
                 android:textStyle="normal"
                 android:textSize="12.5dp"
-                android:text="Your use of Power House is subject to the terms and conditions outlined in our Terms of Service. We encourage you to read through this document to ensure a smooth and compliant experience.">
+                android:text="Your use of Million Sports is subject to the terms and conditions outlined in our Terms of Service. We encourage you to read through this document to ensure a smooth and compliant experience.">
             </TextView>
 
         </LinearLayout>
@@ -123,7 +123,7 @@
                 android:fontFamily="@font/sfpro"
                 android:textStyle="normal"
                 android:textSize="12.5dp"
-                android:text="Before you get started, please take a moment to review our Terms of Service. Your use of Power House indicates your agreement to adhere to these terms and conditions.">
+                android:text="Before you get started, please take a moment to review our Terms of Service. Your use of Million Sports indicates your agreement to adhere to these terms and conditions.">
             </TextView>
 
         </LinearLayout>
@@ -153,7 +153,7 @@
                 android:fontFamily="@font/sfpro"
                 android:textStyle="normal"
                 android:textSize="12.5dp"
-                android:text="Using Power House means you agree to follow the guidelines set forth in our Terms of Service. We recommend reviewing this document to understand your rights and responsibilities as a user.">
+                android:text="Using Million Sports means you agree to follow the guidelines set forth in our Terms of Service. We recommend reviewing this document to understand your rights and responsibilities as a user.">
             </TextView>
 
         </LinearLayout>
@@ -183,7 +183,7 @@
                 android:fontFamily="@font/sfpro"
                 android:textStyle="normal"
                 android:textSize="12.5dp"
-                android:text="We're thrilled to have you on board with Power House. Before you begin, please familiarize yourself with our Terms of Service. Your use of the app implies your consent to these terms.">
+                android:text="We're thrilled to have you on board with Million Sports. Before you begin, please familiarize yourself with our Terms of Service. Your use of the app implies your consent to these terms.">
             </TextView>
 
         </LinearLayout>
@@ -198,7 +198,7 @@
             android:textStyle="bold"
             android:fontFamily="@font/sfpro"
             android:letterSpacing="0.03"
-            android:text="Power House Admin Team">
+            android:text="Million Sports Admin Team">
         </TextView>
 
     </LinearLayout>

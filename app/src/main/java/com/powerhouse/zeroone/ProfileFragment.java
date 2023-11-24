@@ -64,6 +64,16 @@ public class ProfileFragment extends Fragment {
 
         imageView = view.findViewById(R.id.imageView_Profile);
 
+        ImageView infoDialog = view.findViewById(R.id.infoDialog);
+        infoDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), AppInfo.class);
+                getActivity().startActivity(intent);
+                getActivity().finish();
+            }
+        });
+
         ImageView imageViewEditPhoto = view.findViewById(R.id.editPhoto);
         imageViewEditPhoto.setOnClickListener(new View.OnClickListener() {
             @Override

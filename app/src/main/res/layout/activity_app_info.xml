@@ -225,7 +225,7 @@
                 android:layout_below="@+id/intro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Welcome to Power House, where football passion meets cutting-edge technology. Our app is your go-to hub for all things football, offering highlights, news, interactive games, and the ability to vote for your favorite teams just like the pros. This guide will walk you through every exciting feature, ensuring you make the most of your football experience. Let's get started!"
+                android:text="Welcome to Million Sports, where football passion meets cutting-edge technology. Our app is your go-to hub for all things football, offering highlights, news, interactive games, and the ability to vote for your favorite teams just like the pros. This guide will walk you through every exciting feature, ensuring you make the most of your football experience. Let's get started!"
                 android:textColor="@color/secondary_color"
                 android:fontFamily="@font/sfpro"
                 android:textStyle="normal"
@@ -914,7 +914,7 @@
                     android:textAlignment="textStart"
                     android:layout_marginStart="1dp"
                     android:textSize="12.5dp"
-                    android:text="Please read and understand our Terms of Service before using Power House. By using the app, you agree to abide by the terms and conditions outlined in this document.">
+                    android:text="Please read and understand our Terms of Service before using Million Sports. By using the app, you agree to abide by the terms and conditions outlined in this document.">
                 </TextView>
 
                 <TextView

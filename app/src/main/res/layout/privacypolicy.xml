@@ -33,7 +33,7 @@
                 android:fontFamily="@font/sfpro"
                 android:textStyle="normal"
                 android:textSize="12.5dp"
-                android:text="At Power House, we prioritize your privacy. Please take a moment to review our Privacy Policy, which outlines how we handle, protect, and use your personal information.">
+                android:text="At Million Sports, we prioritize your privacy. Please take a moment to review our Privacy Policy, which outlines how we handle, protect, and use your personal information.">
             </TextView>
 
         </LinearLayout>
@@ -63,7 +63,7 @@
                 android:fontFamily="@font/sfpro"
                 android:textStyle="normal"
                 android:textSize="12.5dp"
-                android:text="Safeguarding your privacy is a top priority for us at Power House. We encourage you to familiarize yourself with our Privacy Policy to understand how we handle your data.">
+                android:text="Safeguarding your privacy is a top priority for us at Million Sports. We encourage you to familiarize yourself with our Privacy Policy to understand how we handle your data.">
             </TextView>
 
         </LinearLayout>
@@ -123,7 +123,7 @@
                 android:fontFamily="@font/sfpro"
                 android:textStyle="normal"
                 android:textSize="12.5dp"
-                android:text="We value your privacy and want you to feel confident using Power House. Please review our Privacy Policy to learn more about how we handle your personal information.">
+                android:text="We value your privacy and want you to feel confident using Million Sports. Please review our Privacy Policy to learn more about how we handle your personal information.">
             </TextView>
 
         </LinearLayout>
@@ -153,7 +153,7 @@
                 android:fontFamily="@font/sfpro"
                 android:textStyle="normal"
                 android:textSize="12.5dp"
-                android:text="At Power House, we are committed to protecting your privacy. Our Privacy Policy provides comprehensive information on how we manage your data. Take a moment to review it for your peace of mind.">
+                android:text="At Million Sports, we are committed to protecting your privacy. Our Privacy Policy provides comprehensive information on how we manage your data. Take a moment to review it for your peace of mind.">
             </TextView>
 
         </LinearLayout>
@@ -183,7 +183,7 @@
                 android:fontFamily="@font/sfpro"
                 android:textStyle="normal"
                 android:textSize="12.5dp"
-                android:text="Your privacy matters. We encourage you to read our Privacy Policy to gain insights into how we handle your personal information at Power House.">
+                android:text="Your privacy matters. We encourage you to read our Privacy Policy to gain insights into how we handle your personal information at Million Sports.">
             </TextView>
 
         </LinearLayout>
@@ -198,7 +198,7 @@
             android:textStyle="bold"
             android:fontFamily="@font/sfpro"
             android:letterSpacing="0.03"
-            android:text="Power House Admin Team">
+            android:text="Million Sports Admin Team">
         </TextView>
 
     </LinearLayout>

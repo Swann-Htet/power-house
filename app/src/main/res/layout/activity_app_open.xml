@@ -47,7 +47,8 @@
             android:textColor="@color/primary_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="POWER HOUSE">
+            android:textAllCaps="true"
+            android:text="Million Sports">
         </TextView>
 
     </LinearLayout>
@@ -78,7 +79,7 @@
             android:layout_height="wrap_content"
             android:letterSpacing="0.05"
             android:textStyle="bold"
-            android:text="Swan Htet">
+            android:text="Zero One Technology">
         </TextView>
 
     </LinearLayout>

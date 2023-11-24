@@ -7,22 +7,33 @@
     android:background="@color/white"
     tools:context=".HomeFragment">
 
-    <ImageView
-        android:id="@+id/info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_info"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="20dp">
-    </ImageView>
-
-    <ImageView
-        android:layout_above="@+id/animationViewHome"
+    <Toolbar
+        android:id="@+id/toolbarHome"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginBottom="20dp"
-        android:src="@drawable/powerhouselogo">
-    </ImageView>
+        android:layout_height="60dp"
+        android:background="@color/primary_color">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logophw"
+            android:layout_gravity="center">
+        </ImageView>
+
+
+        <ImageView
+            android:id="@+id/info"
+            android:visibility="invisible"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_info_24"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp">
+        </ImageView>
+
+    </Toolbar>
+
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationViewHome"
